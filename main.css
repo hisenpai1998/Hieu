@@ -1,0 +1,396 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+html{
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.row {
+    width: 800px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 6px;
+}
+
+.col-full {
+    width: 386px;
+
+}
+
+.col-half {
+    width: 50%;
+
+}
+
+.col-third {
+    width: calc(100%/3);
+
+}
+
+
+
+/* 
+1.Từ ngoài vào trong 
+2.Từ trên xuống dưới
+3.Từ tổng quan đến chi tiết
+*/
+
+/* 
+1. Vị Trí
+2. Kích Thước
+3. Màu Sắc
+4. Kiểu Dáng 
+*/
+/* Main */
+#main {
+
+}
+/* header */
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
+
+}
+#nav{
+    display: inline-block;
+
+}
+#nav > li {
+     display: inline-block;
+}
+#nav li {
+   
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none ;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover, #nav > li:hover > a{ 
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav .subnav { 
+    display: none;
+    position: absolute;
+    top:100%;
+    min-width: 120px;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 36px;
+}
+
+#nav .nav-icon-down {
+    font-size: 12px;
+}
+
+#header .search-button {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-button:hover{
+    background-color: red;
+    cursor: pointer;
+    
+}
+#header .search-icon{
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 46px;
+    
+/* Slider */
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/Band/assets/img/1\ \(2\).jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position:absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#slider .text-header {
+    font-weight: 500;
+    font-size: 26px;
+}
+#slider .text-slider {
+    font-size: 20px;
+}
+
+
+
+/* Content */
+#content {
+         /* About me */
+}
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+  
+}
+
+#content .content-heading {
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#content .content-sub-heading {
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(159, 160, 161);
+    letter-spacing: 1px;
+}
+#content .content-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+/* Life  */
+.background {
+    background-color:#000;
+}
+#content .life-section {
+    background-color: #000;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    display: block;
+    color: whitesmoke;
+}
+.life-list {
+    width: 800px;
+    background-color: #fff;
+    margin-top: 40px;
+    width: 98%;
+    margin-left: 8px;
+    color: black;
+    
+}
+#content .life-section .content-text {
+    text-align: center;
+}
+.life-list li {
+    border-bottom: solid #ddd 1px;
+    list-style: none;
+    font-size: 15px;
+    padding: 8px 22px;
+
+    
+}
+
+.life-list .accept {
+    background-color: black;
+    color: #fff;
+    float: right;
+    border-radius: 255%;
+    text-align: center;
+    width: 50px;
+    height: 17px;
+
+}
+/* Places I wanna Travel */
+
+
+.places-list {
+    width: 800px;
+    margin-top: 32px;
+    /* margin-left: 32px; */
+    /* margin-right: 32px; */
+}
+
+.places-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+
+.places-pic {
+    width: 100%;
+    display: block;
+}
+
+.places-pic:hover {
+    opacity: 0.6;
+    
+}
+.places-body {
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.places-head {
+    font-size: 21px;
+
+}
+
+.places-time {
+    color: #757575;
+
+}
+
+.desc {
+
+}
+
+.places-info {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 11px 16px;
+
+
+}
+
+
+
+
+
+
+
+/* Favorite */
+#content .fav-list {
+     margin-top: 48px;
+     overflow: hidden;
+}
+
+#content .fav-item {
+    float: left;
+    width: calc(100%/3);
+    
+}
+#content .fav-name {
+    font-size: 25px;
+    text-align: center;
+}
+
+#content .fav-pic {
+    width: 230px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* Contact */
+.contact-content {
+    line-height: 32px;
+}
+.contact-info {
+    font-size: 18px;
+
+}
+    
+.contact-content i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-info .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.button-submit {
+    float: right;
+    padding: 10px 16px;
+    border: 1px solid #000;
+    background-color: black;
+    color: #fff;
+    margin-right:-2px;
+
+}
+/* Footer */
+
+#footer {
+    
+}
+
+.food-pic {
+    width: 100%;
+    filter: drop-shadow(0,9);
+}
+
+.foot-icon {
+    padding: 64px 16px;
+    text-align: center;
+    line-height:  35px;
+    font-size: 20px ;
+    color: rgb(126, 157, 250);
+}
+.foot-icon a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-size: 25px!important ;}
+}
+
+.foot-icon a:hover {
+    color: #000;
+}
